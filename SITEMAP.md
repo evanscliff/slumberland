@@ -30,8 +30,9 @@ Không đưa “Khuyến mãi” thành một trụ cột điều hướng. Khuy
 ├── /thuong-hieu/
 │   ├── /di-san-tu-1919/
 │   ├── /slumberland-tai-viet-nam/
+│   ├── /king-luxury-phan-phoi-slumberland/
 │   ├── /tieu-chuan-va-kiem-dinh/
-│   └── /doi-tac-phan-phoi-chinh-thuc/
+│   └── /nhan-dien-san-pham-va-diem-ban/
 ├── /khach-san-du-an/
 │   ├── /giai-phap-hospitality/
 │   ├── /du-an-tieu-bieu/
@@ -62,6 +63,7 @@ Không đưa “Khuyến mãi” thành một trụ cột điều hướng. Khuy
 | Nhu cầu | Điểm vào | Điểm chuyển đổi |
 |---|---|---|
 | Muốn biết thương hiệu có đáng tin không | Trang chủ → Di sản → Slumberland tại Việt Nam | Xem showroom / hồ sơ phân phối |
+| Muốn xác minh đơn vị phân phối | Trang chủ → King Luxury phân phối Slumberland | Xem dấu mốc hợp tác / liên hệ King Luxury |
 | Muốn chọn nệm | Sản phẩm / Tìm nệm phù hợp | So sánh → Đặt lịch nằm thử |
 | Hay nóng khi ngủ | Nhu cầu ngủ mát → Công nghệ kiểm soát nhiệt | Xem sản phẩm phù hợp |
 | Ngủ hai người, sợ rung | Nhu cầu ngủ hai người → Công nghệ giảm truyền động | So sánh → Tư vấn riêng |
@@ -109,6 +111,7 @@ Giữ mô hình biên tập bảo tồn: nội dung editorial trước, sau đó
 - Trang chủ.
 - Di sản từ 1919.
 - Slumberland tại Việt Nam.
+- King Luxury phân phối Slumberland.
 - Sản phẩm và 3 bộ sưu tập thực tế đang phân phối.
 - Template sản phẩm.
 - Công nghệ cốt lõi.
