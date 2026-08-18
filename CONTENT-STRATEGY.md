@@ -6,7 +6,7 @@ Website không chỉ là một cửa hàng bán nệm. Đây phải là **nguồ
 
 1. Slumberland là thương hiệu giấc ngủ quốc tế có di sản rõ ràng.
 2. Sản phẩm tại Việt Nam có công nghệ, cấu hình và nguồn gốc minh bạch.
-3. King Luxury là đơn vị đưa thương hiệu vào thị trường và chịu trách nhiệm cho trải nghiệm tư vấn, giao lắp, bảo hành tại Việt Nam.
+3. King Luxury là đơn vị nhập khẩu và phân phối Slumberland tại Việt Nam, đồng thời là đầu mối tổ chức trải nghiệm tư vấn, giao lắp và tiếp nhận chăm sóc sau bán hàng cho sản phẩm thuộc hệ thống phân phối của King Luxury.
 
 ## 2. Kiến trúc thông điệp
 
@@ -37,9 +37,17 @@ Không mô tả bằng danh sách thuật ngữ. Mỗi công nghệ phải nối
 
 **Di sản quốc tế, được tuyển chọn cho trải nghiệm nghỉ ngơi tại Việt Nam.**
 
-King Luxury nên xuất hiện trong một section riêng, footer và các trang dịch vụ; không đồng thương hiệu dày đặc ở mọi heading. Cách ghi đề xuất:
+King Luxury phải xuất hiện nhất quán nhưng có phân cấp: một dòng phân phối ở top bar/lockup phụ, một bằng chứng trong dải trust, một section hợp tác riêng, CTA tư vấn, trang giải thích quan hệ phân phối và footer. Không biến mọi heading thành đồng thương hiệu. Cách ghi chính:
 
 > Slumberland Việt Nam — được King Luxury nhập khẩu và phân phối tại Việt Nam.
+
+Cách ghi ngắn dùng trên header/footer:
+
+> Phân phối tại Việt Nam bởi King Luxury.
+
+Cách ghi bằng chứng hợp tác:
+
+> Ngày 23 tháng 12 năm 2024, đại diện Hilding Anders Asia Pacific và King Luxury ký kết thỏa thuận phân phối Slumberland tại Việt Nam.
 
 Chỉ dùng “độc quyền”, “duy nhất”, “chính hãng toàn quốc” hoặc phạm vi lãnh thổ cụ thể khi hợp đồng/phụ lục còn hiệu lực xác nhận đúng câu chữ đó.
 
@@ -52,13 +60,13 @@ Chỉ dùng “độc quyền”, “duy nhất”, “chính hãng toàn quốc
 
 ## 4. Wireframe trang chủ — logic nội dung
 
-1. **Hero:** xác lập Slumberland Việt Nam và CTA trải nghiệm.
-2. **Dải bằng chứng:** 1919, châu Á, khách sạn, đối tác Việt Nam.
+1. **Hero:** tạo ấn tượng đầu tiên rộng về Slumberland; chỉ dùng một dòng nhỏ xác nhận “được King Luxury nhập khẩu và phân phối”.
+2. **Dải bằng chứng:** 1919, châu Á, khách sạn và dấu mốc thỏa thuận phân phối ngày 23.12.2024.
 3. **Tuyên ngôn:** giấc ngủ là trải nghiệm cá nhân, không phải chọn theo giá/độ mềm đơn thuần.
 4. **Bộ sưu tập:** dẫn từ nhu cầu đến dòng sản phẩm.
 5. **Công nghệ:** giải thích theo ba vấn đề: nhiệt độ, nâng đỡ, chuyển động.
 6. **Hospitality:** bằng chứng năng lực ở môi trường sử dụng khắt khe.
-7. **Slumberland tại Việt Nam:** vai trò King Luxury, nguồn gốc và dịch vụ.
+7. **Slumberland tại Việt Nam:** ngày ký kết, vai trò King Luxury, quy trình phân phối và trải nghiệm địa phương.
 8. **Quy trình trải nghiệm:** tư vấn → nằm thử → chọn cấu hình → giao lắp/chăm sóc.
 9. **Cẩm nang:** xây chiều sâu SEO/GEO.
 10. **CTA cuối:** đặt lịch riêng hoặc tìm showroom.
