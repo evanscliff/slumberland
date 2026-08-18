@@ -25,6 +25,8 @@
     header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: rgba(243,241,236,.94); backdrop-filter: blur(12px); }
     nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .logo { font-family: Georgia, serif; font-size: 21px; letter-spacing: .16em; text-decoration: none; }
+    .brand-lockup { display: grid; gap: 2px; }
+    .brand-lockup small { color: var(--muted); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
     .navlinks { display: flex; gap: 24px; align-items: center; font-size: 13px; }
     .navlinks a { text-decoration: none; }
     .button { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: 0 18px; border: 1px solid var(--ink); text-decoration: none; font-size: 13px; }
@@ -38,6 +40,7 @@
     h2 { margin: 0 0 18px; font-size: clamp(34px, 4vw, 56px); }
     h3 { margin: 0 0 10px; font-size: 25px; }
     .lead { max-width: 580px; color: #4c4e49; font-size: 18px; }
+    .distributed-by { display: flex; gap: 11px; align-items: center; width: fit-content; margin-top: 24px; padding: 10px 13px; border-left: 2px solid var(--gold); color: #4c4e49; background: rgba(255,255,255,.45); font-size: 12px; }
     .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
     .placeholder { position: relative; min-height: 320px; display: grid; place-items: center; overflow: hidden; color: #fff; background: linear-gradient(145deg, #173c34, #35594d 60%, #a68c62); }
     .placeholder::after { content: "HÌNH ẢNH THƯƠNG HIỆU / KHÔNG GIAN NGHỈ NGƠI"; width: 70%; border: 1px solid rgba(255,255,255,.55); padding: 22px; text-align: center; font-size: 11px; letter-spacing: .14em; }
@@ -67,6 +70,9 @@
     .split .placeholder { min-height: 620px; }
     .checks { display: grid; gap: 14px; margin: 28px 0 0; padding: 0; list-style: none; }
     .checks li { padding-top: 14px; border-top: 1px solid var(--line); }
+    .partner-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 18px; margin-top: 40px; }
+    .partner-card { padding: 30px; border: 1px solid rgba(32,33,31,.16); background: rgba(255,255,255,.5); }
+    .partner-card strong { display: block; margin-bottom: 9px; font-family: Georgia, serif; font-size: 25px; font-weight: 400; }
     .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
     .step { min-height: 240px; padding: 30px; background: #fff; }
     .step b { display: block; margin-bottom: 38px; color: var(--gold); font-family: Georgia, serif; font-size: 28px; font-weight: 400; }
@@ -96,6 +102,7 @@
       .tech-card:nth-child(2) { border-right: 0; }
       .tech-card:last-child { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.25); }
       .split { grid-template-columns: 1fr; }
+      .partner-grid { grid-template-columns: 1fr; }
       .split .content { padding: 72px 24px; }
       .split .placeholder { min-height: 420px; }
       .editorial { grid-template-columns: 1fr; }
@@ -105,6 +112,7 @@
       .notice { font-size: 10px; }
       nav { min-height: 64px; }
       .logo { font-size: 16px; }
+      .brand-lockup small { font-size: 8px; }
       .navlinks .button { min-height: 38px; padding: 0 11px; font-size: 11px; }
       h1 { font-size: 46px; }
       section { padding: 78px 0; }
@@ -118,10 +126,10 @@
   </style>
 </head>
 <body>
-  <div class="notice">WIREFRAME CONTENT-FIRST · CHƯA PHẢI THIẾT KẾ UI CUỐI CÙNG</div>
+  <div class="notice">SLUMBERLAND VIỆT NAM · ĐƯỢC KING LUXURY NHẬP KHẨU &amp; PHÂN PHỐI</div>
   <header>
     <nav class="wrap" aria-label="Điều hướng chính">
-      <a class="logo" href="#top">SLUMBERLAND</a>
+      <a class="brand-lockup" href="#top" style="text-decoration:none"><span class="logo">SLUMBERLAND</span><small>Việt Nam · Phân phối bởi King Luxury</small></a>
       <div class="navlinks">
         <a href="#collections">Sản phẩm</a>
         <a href="#technology">Công nghệ</a>
@@ -139,12 +147,13 @@
         <div>
           <p class="eyebrow">Slumberland Việt Nam · Since 1919</p>
           <h1>Hơn một thế kỷ hoàn thiện giấc ngủ.</h1>
-          <p class="lead">Di sản chế tác Anh quốc, tiếp nối bằng những công nghệ kiểm soát nhiệt độ, nâng đỡ cơ thể và giảm truyền chuyển động — được tuyển chọn cho trải nghiệm nghỉ ngơi tại Việt Nam.</p>
+          <p class="lead">Từ di sản chế tác Anh quốc đến những giải pháp nghỉ ngơi được phát triển cho khí hậu và nhịp sống hiện đại, Slumberland theo đuổi một chuẩn mực nhất quán: sự êm ái phải đi cùng khả năng nâng đỡ và giá trị bền lâu.</p>
+          <p class="distributed-by"><strong>Slumberland tại Việt Nam</strong> được King Luxury nhập khẩu và phân phối.</p>
           <div class="actions">
             <a class="button dark" href="#collections">Khám phá bộ sưu tập</a>
             <a class="button" href="#experience">Đặt lịch nằm thử</a>
           </div>
-          <span class="annotation">Mục tiêu: xác lập thương hiệu + thị trường + 2 lối chuyển đổi</span>
+          <span class="annotation">Bản duyệt content-first · Hình ảnh sẽ được thay ở vòng thiết kế</span>
         </div>
       </div>
       <div class="placeholder" role="img" aria-label="Vị trí ảnh hero thương hiệu"></div>
@@ -154,7 +163,7 @@
       <div><strong>1919</strong><span>Khởi nguồn tại Anh</span></div>
       <div><strong>100+ năm</strong><span>Kinh nghiệm về giấc ngủ</span></div>
       <div><strong>20 thị trường*</strong><span>Hiện diện tại châu Á</span></div>
-      <div><strong>King Luxury</strong><span>Nhập khẩu & phân phối tại Việt Nam</span></div>
+      <div><strong>23.12.2024</strong><span>Thỏa thuận phân phối với King Luxury</span></div>
     </div>
 
     <section id="heritage">
@@ -165,7 +174,7 @@
             <h2>Một tên tuổi được xây qua nhiều thế hệ nghỉ ngơi.</h2>
           </div>
           <div>
-            <p>Từ điểm khởi đầu tại Anh năm 1919, Slumberland theo đuổi một câu hỏi nhất quán: làm thế nào để sự êm ái, khả năng nâng đỡ và độ bền cùng tồn tại trong một chiếc nệm. Câu chuyện thương hiệu cần được kể bằng mốc thời gian, tư liệu và những đổi mới có thể kiểm chứng.</p>
+            <p>Từ điểm khởi đầu tại Anh năm 1919, Slumberland theo đuổi một câu hỏi nhất quán: làm thế nào để sự êm ái, khả năng nâng đỡ và độ bền cùng tồn tại trong một chiếc nệm. Hơn một thế kỷ sau, tinh thần ấy tiếp tục hiện diện trong cách thương hiệu lựa chọn vật liệu, phát triển hệ nâng đỡ và kiểm soát chất lượng.</p>
             <span class="annotation">Link: /thuong-hieu/di-san-tu-1919/ · Dùng timeline có nguồn</span>
           </div>
         </div>
@@ -180,7 +189,7 @@
             <p class="eyebrow">Bộ sưu tập tại Việt Nam</p>
             <h2>Chọn theo trải nghiệm ngủ, không chỉ theo tên model.</h2>
           </div>
-          <p>Ba lối vào ngắn gọn giúp khách nhận ra nhu cầu của mình trước khi đọc thông số. Tên bộ sưu tập và model sẽ được khóa theo danh mục hàng thực tế nhập về Việt Nam.</p>
+          <p>King Luxury chỉ giới thiệu những bộ sưu tập và model thực tế được nhập khẩu, có hồ sơ cấu hình rõ ràng và phù hợp với định hướng trải nghiệm tại thị trường Việt Nam. Khách hàng bắt đầu từ nhu cầu ngủ, sau đó mới đi sâu vào thông số.</p>
         </div>
         <div class="collections">
           <article class="collection">
@@ -243,24 +252,28 @@
           <li>Trang case study riêng cho dự án được phép công bố.</li>
           <li>Biểu mẫu B2B tách khỏi tư vấn khách hàng cá nhân.</li>
         </ul>
-        <div class="actions"><a class="button dark" href="#">Khám phá năng lực dự án</a></div>
+        <div class="actions"><a class="button dark" href="#">Trao đổi cùng bộ phận dự án King Luxury</a></div>
         <span class="annotation">Không dùng logo khách sạn khi chưa có quyền công bố</span>
       </div>
     </section>
 
-    <section style="background:#e7e2d8">
+    <section id="distribution" style="background:#e7e2d8">
       <div class="wrap">
         <div class="section-head">
           <div>
-            <p class="eyebrow">Slumberland tại Việt Nam</p>
-            <h2>Di sản toàn cầu, được King Luxury đưa đến Việt Nam.</h2>
+            <p class="eyebrow">Phân phối tại Việt Nam bởi King Luxury</p>
+            <h2>Một thương hiệu quốc tế cần một trải nghiệm địa phương tương xứng.</h2>
           </div>
           <div>
-            <p>King Luxury đảm nhiệm vai trò nhập khẩu và phân phối, đồng thời chuyển trải nghiệm thương hiệu thành một quy trình phù hợp hơn với khách hàng Việt Nam: tư vấn riêng, nằm thử có định hướng, minh bạch cấu hình và chăm sóc sau bán hàng.</p>
-            <span class="annotation">Cần gắn hồ sơ phân phối + phạm vi quyền thương hiệu đã duyệt</span>
+            <p>Ngày 23 tháng 12 năm 2024, đại diện Hilding Anders Asia Pacific và King Luxury ký kết thỏa thuận phân phối Slumberland tại Việt Nam. Từ nền tảng đó, King Luxury đảm nhiệm việc đưa các bộ sưu tập được lựa chọn đến khách hàng, đồng thời tổ chức tư vấn, trải nghiệm tại showroom, giao lắp và tiếp nhận chăm sóc sau bán hàng.</p>
+            <span class="annotation">Câu chữ pháp lý: thỏa thuận phân phối · Không dùng “độc quyền” khi chưa xác minh</span>
           </div>
         </div>
         <div class="placeholder" style="min-height:420px" role="img" aria-label="Vị trí ảnh hợp tác Slumberland và King Luxury"></div>
+        <div class="partner-grid">
+          <div class="partner-card"><strong>Dấu mốc 23.12.2024</strong><p>Đại diện Slumberland/Hilding Anders Asia Pacific và King Luxury tại lễ ký kết thỏa thuận phân phối.</p></div>
+          <div class="partner-card"><strong>King Luxury không chỉ giao một chiếc nệm.</strong><p>Đội ngũ bắt đầu từ thể trạng, thói quen ngủ và mong muốn về cảm giác nằm; sau đó mới đối chiếu với độ cứng, cấu trúc và công nghệ của từng model. Sản phẩm được giao lắp và tiếp nhận chăm sóc trong cùng hệ thống phân phối của King Luxury.</p></div>
+        </div>
       </div>
     </section>
 
@@ -271,13 +284,13 @@
             <p class="eyebrow">Trải nghiệm tại showroom</p>
             <h2>Chọn nệm là một quá trình cảm nhận có hướng dẫn.</h2>
           </div>
-          <p>Giảm áp lực mua ngay. Thay bằng quy trình rõ ràng giúp khách hiểu độ cứng, độ lún, khả năng nâng đỡ và khác biệt khi ngủ hai người.</p>
+          <p>Tại hệ thống King Luxury, việc tư vấn không bắt đầu bằng mẫu đắt nhất. Quy trình tập trung vào cảm giác nằm phù hợp, giúp khách hiểu độ cứng, độ lún, khả năng nâng đỡ và khác biệt khi ngủ hai người.</p>
         </div>
         <div class="process">
           <div class="step"><b>01</b><h3>Lắng nghe</h3><p>Thói quen ngủ, thể trạng, không gian và điều khách đang chưa hài lòng.</p></div>
           <div class="step"><b>02</b><h3>Nằm thử</h3><p>Trải nghiệm các cấu hình khác nhau trong đủ thời gian để cảm nhận.</p></div>
           <div class="step"><b>03</b><h3>Đối chiếu</h3><p>So sánh cảm giác với cấu trúc và công nghệ, không chỉ so sánh giá.</p></div>
-          <div class="step"><b>04</b><h3>Hoàn thiện</h3><p>Chọn cấu hình, giao lắp và chăm sóc sau bán hàng theo chính sách Việt Nam.</p></div>
+          <div class="step"><b>04</b><h3>Đồng hành</h3><p>King Luxury giao lắp, hướng dẫn sử dụng và tiếp nhận chăm sóc sau bán hàng theo chính sách áp dụng tại Việt Nam.</p></div>
         </div>
       </div>
     </section>
@@ -301,9 +314,9 @@
 
     <section class="final-cta">
       <div class="wrap">
-        <p class="eyebrow">Một trải nghiệm dành riêng cho anh/chị</p>
+        <p class="eyebrow">Tư vấn trực tiếp bởi đội ngũ King Luxury</p>
         <h2>Hãy bắt đầu từ cách anh/chị muốn được nghỉ ngơi.</h2>
-        <p>Đội ngũ tư vấn giúp thu hẹp lựa chọn trước khi mời anh/chị trải nghiệm những cấu hình phù hợp nhất tại showroom.</p>
+        <p>Đội ngũ King Luxury giúp thu hẹp lựa chọn trước khi mời anh/chị trải nghiệm những cấu hình Slumberland phù hợp nhất tại showroom.</p>
         <div class="actions">
           <a class="button" href="#">Đặt lịch tư vấn riêng</a>
           <a class="button" href="#">Tìm showroom gần bạn</a>
@@ -314,7 +327,7 @@
 
   <footer>
     <div class="wrap footer-row">
-      <div><strong>SLUMBERLAND VIỆT NAM</strong><br>Được King Luxury nhập khẩu & phân phối tại Việt Nam.</div>
+      <div><strong>SLUMBERLAND VIỆT NAM</strong><br>Được King Luxury nhập khẩu &amp; phân phối tại Việt Nam.<br>Thỏa thuận phân phối được ký kết ngày 23.12.2024.</div>
       <div>* Số liệu thương hiệu phải được đối chiếu tài liệu corporate mới nhất trước khi public.</div>
     </div>
   </footer>
