@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wireframe nội dung — Slumberland Việt Nam</title>
+  <meta name="description" content="Wireframe content-first cho website Slumberland Việt Nam.">
+  <style>
+    :root {
+      --ink: #20211f;
+      --muted: #62645f;
+      --line: #d9d8d2;
+      --paper: #f3f1ec;
+      --card: #fff;
+      --brand: #183d35;
+      --gold: #a8874e;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font: 15px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: inherit; }
+    .wrap { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    .notice { padding: 10px 20px; color: #fff; background: var(--ink); text-align: center; font-size: 12px; letter-spacing: .06em; }
+    header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: rgba(243,241,236,.94); backdrop-filter: blur(12px); }
+    nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { font-family: Georgia, serif; font-size: 21px; letter-spacing: .16em; text-decoration: none; }
+    .navlinks { display: flex; gap: 24px; align-items: center; font-size: 13px; }
+    .navlinks a { text-decoration: none; }
+    .button { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: 0 18px; border: 1px solid var(--ink); text-decoration: none; font-size: 13px; }
+    .button.dark { color: #fff; background: var(--ink); }
+    .hero { min-height: 720px; display: grid; grid-template-columns: 1.05fr .95fr; background: #ebe7df; }
+    .hero-copy { display: flex; align-items: center; }
+    .hero-copy > div { width: min(560px, calc(100% - 48px)); margin-left: max(24px, calc((100vw - var(--max))/2)); padding: 80px 0; }
+    .eyebrow { margin: 0 0 20px; color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-height: 1.12; }
+    h1 { margin: 0 0 24px; font-size: clamp(46px, 6vw, 82px); }
+    h2 { margin: 0 0 18px; font-size: clamp(34px, 4vw, 56px); }
+    h3 { margin: 0 0 10px; font-size: 25px; }
+    .lead { max-width: 580px; color: #4c4e49; font-size: 18px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+    .placeholder { position: relative; min-height: 320px; display: grid; place-items: center; overflow: hidden; color: #fff; background: linear-gradient(145deg, #173c34, #35594d 60%, #a68c62); }
+    .placeholder::after { content: "HÌNH ẢNH THƯƠNG HIỆU / KHÔNG GIAN NGHỈ NGƠI"; width: 70%; border: 1px solid rgba(255,255,255,.55); padding: 22px; text-align: center; font-size: 11px; letter-spacing: .14em; }
+    .proof { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); background: #fff; }
+    .proof div { padding: 32px; border-right: 1px solid var(--line); text-align: center; }
+    .proof div:last-child { border-right: 0; }
+    .proof strong { display: block; font-family: Georgia, serif; font-size: 28px; font-weight: 400; }
+    .proof span { color: var(--muted); font-size: 12px; }
+    section { padding: 112px 0; }
+    .section-head { display: grid; grid-template-columns: .85fr 1.15fr; gap: 72px; align-items: end; margin-bottom: 50px; }
+    .section-head p { max-width: 610px; margin: 0; color: var(--muted); font-size: 17px; }
+    .annotation { display: inline-block; margin-top: 18px; padding: 6px 9px; border: 1px dashed #a8a69f; color: #767872; background: rgba(255,255,255,.5); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+    .collections { display: grid; grid-template-columns: 1.25fr .75fr .75fr; gap: 16px; }
+    .collection { min-height: 520px; display: flex; flex-direction: column; justify-content: end; padding: 30px; color: #fff; background: linear-gradient(180deg, rgba(20,30,27,.1), rgba(20,30,27,.88)), #80948c; }
+    .collection:nth-child(2) { background-color: #786c61; }
+    .collection:nth-child(3) { background-color: #687079; }
+    .collection p { color: rgba(255,255,255,.76); }
+    .tech { background: var(--brand); color: #fff; }
+    .tech .section-head p { color: rgba(255,255,255,.7); }
+    .tech-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid rgba(255,255,255,.25); }
+    .tech-card { min-height: 310px; padding: 34px; border-right: 1px solid rgba(255,255,255,.25); }
+    .tech-card:last-child { border-right: 0; }
+    .tech-card .number { color: #c8ad80; font-family: Georgia, serif; font-size: 44px; }
+    .tech-card p { color: rgba(255,255,255,.7); }
+    .split { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+    .split .content { padding: 80px max(24px, calc((100vw - var(--max))/2)); padding-right: 8vw; background: #fff; }
+    .split .placeholder { min-height: 620px; }
+    .checks { display: grid; gap: 14px; margin: 28px 0 0; padding: 0; list-style: none; }
+    .checks li { padding-top: 14px; border-top: 1px solid var(--line); }
+    .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .step { min-height: 240px; padding: 30px; background: #fff; }
+    .step b { display: block; margin-bottom: 38px; color: var(--gold); font-family: Georgia, serif; font-size: 28px; font-weight: 400; }
+    .editorial { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    article { background: #fff; }
+    article .thumb { min-height: 220px; background: #d8d6cf; }
+    article .body { padding: 25px; }
+    article .meta { color: var(--gold); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    .final-cta { color: #fff; background: #181a18; text-align: center; }
+    .final-cta p { max-width: 620px; margin: 0 auto; color: #b9bbb6; font-size: 17px; }
+    .final-cta .actions { justify-content: center; }
+    .final-cta .button { border-color: #fff; }
+    footer { padding: 48px 0; color: #777973; background: #fff; font-size: 12px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 30px; }
+    @media (max-width: 900px) {
+      .navlinks a:not(.button) { display: none; }
+      .hero { min-height: auto; grid-template-columns: 1fr; }
+      .hero-copy > div { margin-inline: 24px; padding: 72px 0; }
+      .hero .placeholder { min-height: 460px; }
+      .proof { grid-template-columns: 1fr 1fr; }
+      .proof div:nth-child(2) { border-right: 0; }
+      .proof div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .section-head { grid-template-columns: 1fr; gap: 12px; }
+      .collections { grid-template-columns: 1fr; }
+      .collection { min-height: 420px; }
+      .tech-grid, .process { grid-template-columns: 1fr 1fr; }
+      .tech-card:nth-child(2) { border-right: 0; }
+      .tech-card:last-child { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.25); }
+      .split { grid-template-columns: 1fr; }
+      .split .content { padding: 72px 24px; }
+      .split .placeholder { min-height: 420px; }
+      .editorial { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(calc(100% - 28px), var(--max)); }
+      .notice { font-size: 10px; }
+      nav { min-height: 64px; }
+      .logo { font-size: 16px; }
+      .navlinks .button { min-height: 38px; padding: 0 11px; font-size: 11px; }
+      h1 { font-size: 46px; }
+      section { padding: 78px 0; }
+      .proof strong { font-size: 23px; }
+      .proof div { padding: 23px 14px; }
+      .tech-grid, .process { grid-template-columns: 1fr; }
+      .tech-card, .tech-card:nth-child(2) { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.25); }
+      .tech-card:last-child { grid-column: auto; border-top: 0; border-bottom: 0; }
+      .footer-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">WIREFRAME CONTENT-FIRST · CHƯA PHẢI THIẾT KẾ UI CUỐI CÙNG</div>
+  <header>
+    <nav class="wrap" aria-label="Điều hướng chính">
+      <a class="logo" href="#top">SLUMBERLAND</a>
+      <div class="navlinks">
+        <a href="#collections">Sản phẩm</a>
+        <a href="#technology">Công nghệ</a>
+        <a href="#heritage">Di sản</a>
+        <a href="#hospitality">Khách sạn & Dự án</a>
+        <a href="#journal">Cẩm nang</a>
+        <a class="button dark" href="#experience">Đặt lịch trải nghiệm</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="hero-copy">
+        <div>
+          <p class="eyebrow">Slumberland Việt Nam · Since 1919</p>
+          <h1>Hơn một thế kỷ hoàn thiện giấc ngủ.</h1>
+          <p class="lead">Di sản chế tác Anh quốc, tiếp nối bằng những công nghệ kiểm soát nhiệt độ, nâng đỡ cơ thể và giảm truyền chuyển động — được tuyển chọn cho trải nghiệm nghỉ ngơi tại Việt Nam.</p>
+          <div class="actions">
+            <a class="button dark" href="#collections">Khám phá bộ sưu tập</a>
+            <a class="button" href="#experience">Đặt lịch nằm thử</a>
+          </div>
+          <span class="annotation">Mục tiêu: xác lập thương hiệu + thị trường + 2 lối chuyển đổi</span>
+        </div>
+      </div>
+      <div class="placeholder" role="img" aria-label="Vị trí ảnh hero thương hiệu"></div>
+    </div>
+
+    <div class="proof" aria-label="Bằng chứng thương hiệu">
+      <div><strong>1919</strong><span>Khởi nguồn tại Anh</span></div>
+      <div><strong>100+ năm</strong><span>Kinh nghiệm về giấc ngủ</span></div>
+      <div><strong>20 thị trường*</strong><span>Hiện diện tại châu Á</span></div>
+      <div><strong>King Luxury</strong><span>Nhập khẩu & phân phối tại Việt Nam</span></div>
+    </div>
+
+    <section id="heritage">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Di sản Slumberland</p>
+            <h2>Một tên tuổi được xây qua nhiều thế hệ nghỉ ngơi.</h2>
+          </div>
+          <div>
+            <p>Từ điểm khởi đầu tại Anh năm 1919, Slumberland theo đuổi một câu hỏi nhất quán: làm thế nào để sự êm ái, khả năng nâng đỡ và độ bền cùng tồn tại trong một chiếc nệm. Câu chuyện thương hiệu cần được kể bằng mốc thời gian, tư liệu và những đổi mới có thể kiểm chứng.</p>
+            <span class="annotation">Link: /thuong-hieu/di-san-tu-1919/ · Dùng timeline có nguồn</span>
+          </div>
+        </div>
+        <div class="placeholder" style="min-height:440px" role="img" aria-label="Vị trí timeline hình ảnh di sản"></div>
+      </div>
+    </section>
+
+    <section id="collections" style="background:#fff">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Bộ sưu tập tại Việt Nam</p>
+            <h2>Chọn theo trải nghiệm ngủ, không chỉ theo tên model.</h2>
+          </div>
+          <p>Ba lối vào ngắn gọn giúp khách nhận ra nhu cầu của mình trước khi đọc thông số. Tên bộ sưu tập và model sẽ được khóa theo danh mục hàng thực tế nhập về Việt Nam.</p>
+        </div>
+        <div class="collections">
+          <article class="collection">
+            <p class="eyebrow">01 · Nhiệt độ</p>
+            <h3>TempSmart™</h3>
+            <p>Dành cho người coi cảm giác mát, khô thoáng và cân bằng nhiệt suốt đêm là ưu tiên.</p>
+            <span class="annotation">Chỉ gắn model có SPEC xác nhận</span>
+          </article>
+          <article class="collection">
+            <p class="eyebrow">02 · Phục hồi</p>
+            <h3>Vitalize</h3>
+            <p>Tiếp cận trải nghiệm nghỉ ngơi sau một ngày dài bằng cấu trúc và vật liệu đã được xác minh.</p>
+          </article>
+          <article class="collection">
+            <p class="eyebrow">03 · Hospitality</p>
+            <h3>Royal Hotel</h3>
+            <p>Cảm giác êm ái có kiểm soát, lấy cảm hứng từ tiêu chuẩn phòng nghỉ cao cấp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech" id="technology">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Công nghệ tạo nên cảm giác</p>
+            <h2>Không phải thuật ngữ. Là điều cơ thể cảm nhận mỗi đêm.</h2>
+          </div>
+          <p>Thay vì dồn mọi logo công nghệ vào một nơi, website giải thích từng cơ chế bằng vấn đề thực tế và liên kết tới đúng sản phẩm có sử dụng công nghệ đó.</p>
+        </div>
+        <div class="tech-grid">
+          <article class="tech-card">
+            <span class="number">01</span>
+            <h3>Cân bằng nhiệt độ</h3>
+            <p>Cách vật liệu tiếp nhận, giải phóng nhiệt và duy trì bề mặt ngủ dễ chịu trong điều kiện khí hậu nóng ẩm.</p>
+          </article>
+          <article class="tech-card">
+            <span class="number">02</span>
+            <h3>Nâng đỡ có chủ đích</h3>
+            <p>Cách hệ lò xo và các lớp comfort phân bổ trọng lượng, phản hồi theo đường cong cơ thể.</p>
+          </article>
+          <article class="tech-card">
+            <span class="number">03</span>
+            <h3>Hạn chế truyền động</h3>
+            <p>Cách cấu trúc độc lập hỗ trợ giấc ngủ hai người khi một bên thay đổi tư thế.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="split" id="hospitality">
+      <div class="placeholder" role="img" aria-label="Vị trí ảnh dự án khách sạn"></div>
+      <div class="content">
+        <p class="eyebrow">Hospitality & Project</p>
+        <h2>Được thử thách trong những không gian nghỉ ngơi khắt khe.</h2>
+        <p class="lead">Theo Slumberland Asia, thương hiệu đã tham gia hơn 2.000 dự án khách sạn năm sao trên toàn cầu. Đây là lớp bằng chứng quan trọng về độ bền, tính nhất quán và khả năng đáp ứng nhiều nhóm người nằm.</p>
+        <ul class="checks">
+          <li>Giải pháp nệm và hệ giường cho khách sạn, resort, căn hộ dịch vụ.</li>
+          <li>Trang case study riêng cho dự án được phép công bố.</li>
+          <li>Biểu mẫu B2B tách khỏi tư vấn khách hàng cá nhân.</li>
+        </ul>
+        <div class="actions"><a class="button dark" href="#">Khám phá năng lực dự án</a></div>
+        <span class="annotation">Không dùng logo khách sạn khi chưa có quyền công bố</span>
+      </div>
+    </section>
+
+    <section style="background:#e7e2d8">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Slumberland tại Việt Nam</p>
+            <h2>Di sản toàn cầu, được King Luxury đưa đến Việt Nam.</h2>
+          </div>
+          <div>
+            <p>King Luxury đảm nhiệm vai trò nhập khẩu và phân phối, đồng thời chuyển trải nghiệm thương hiệu thành một quy trình phù hợp hơn với khách hàng Việt Nam: tư vấn riêng, nằm thử có định hướng, minh bạch cấu hình và chăm sóc sau bán hàng.</p>
+            <span class="annotation">Cần gắn hồ sơ phân phối + phạm vi quyền thương hiệu đã duyệt</span>
+          </div>
+        </div>
+        <div class="placeholder" style="min-height:420px" role="img" aria-label="Vị trí ảnh hợp tác Slumberland và King Luxury"></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Trải nghiệm tại showroom</p>
+            <h2>Chọn nệm là một quá trình cảm nhận có hướng dẫn.</h2>
+          </div>
+          <p>Giảm áp lực mua ngay. Thay bằng quy trình rõ ràng giúp khách hiểu độ cứng, độ lún, khả năng nâng đỡ và khác biệt khi ngủ hai người.</p>
+        </div>
+        <div class="process">
+          <div class="step"><b>01</b><h3>Lắng nghe</h3><p>Thói quen ngủ, thể trạng, không gian và điều khách đang chưa hài lòng.</p></div>
+          <div class="step"><b>02</b><h3>Nằm thử</h3><p>Trải nghiệm các cấu hình khác nhau trong đủ thời gian để cảm nhận.</p></div>
+          <div class="step"><b>03</b><h3>Đối chiếu</h3><p>So sánh cảm giác với cấu trúc và công nghệ, không chỉ so sánh giá.</p></div>
+          <div class="step"><b>04</b><h3>Hoàn thiện</h3><p>Chọn cấu hình, giao lắp và chăm sóc sau bán hàng theo chính sách Việt Nam.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journal" style="background:#fff">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Cẩm nang giấc ngủ</p>
+            <h2>Kiến thức để lựa chọn tự tin hơn.</h2>
+          </div>
+          <p>Cụm nội dung hỗ trợ SEO/GEO nhưng vẫn giữ chất editorial: trả lời câu hỏi thật, dẫn tới công nghệ và sản phẩm bằng ngữ cảnh phù hợp.</p>
+        </div>
+        <div class="editorial">
+          <article><div class="thumb"></div><div class="body"><p class="meta">Chọn nệm</p><h3>Nệm mềm hay nệm cứng phù hợp hơn?</h3><p>Đưa người đọc từ quan niệm phổ biến tới các yếu tố thật sự cần đánh giá.</p></div></article>
+          <article><div class="thumb"></div><div class="body"><p class="meta">Ngủ hai người</p><h3>Khi chuyển động của một người đánh thức người còn lại</h3><p>Giải thích vai trò của cấu trúc lò xo và cách nằm thử đúng.</p></div></article>
+          <article><div class="thumb"></div><div class="body"><p class="meta">Khí hậu</p><h3>Một bề mặt ngủ dễ chịu trong đêm nóng ẩm</h3><p>Phân biệt cảm giác mát ban đầu và khả năng quản lý nhiệt lâu dài.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="wrap">
+        <p class="eyebrow">Một trải nghiệm dành riêng cho anh/chị</p>
+        <h2>Hãy bắt đầu từ cách anh/chị muốn được nghỉ ngơi.</h2>
+        <p>Đội ngũ tư vấn giúp thu hẹp lựa chọn trước khi mời anh/chị trải nghiệm những cấu hình phù hợp nhất tại showroom.</p>
+        <div class="actions">
+          <a class="button" href="#">Đặt lịch tư vấn riêng</a>
+          <a class="button" href="#">Tìm showroom gần bạn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div><strong>SLUMBERLAND VIỆT NAM</strong><br>Được King Luxury nhập khẩu & phân phối tại Việt Nam.</div>
+      <div>* Số liệu thương hiệu phải được đối chiếu tài liệu corporate mới nhất trước khi public.</div>
+    </div>
+  </footer>
+</body>
+</html>
